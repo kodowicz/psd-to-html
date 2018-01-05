@@ -1,0 +1,344 @@
+html {
+  margin: 0;
+  padding: 0
+}
+/* -> don't forget:
+  - remove height from white sections
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: white
+}
+
+.check {
+  position: absolute;
+  top: 0;
+  height: 230px;
+  width: 100%;
+  //background: rgba(0,224,208,.4);
+}
+/* ============================
+---------- header -------------
+============================ */
+
+/* ----------  navigation  ---------- */
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page-logo {
+  width: 130px;
+  height: 50px;
+}
+.navigation__links {
+  margin-left: 280px;
+}
+.nav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.nav--item {
+  padding: 35px 13px;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
+}
+.nav-item--current {
+  color: #00e0d0;
+}
+
+/* ----------  header  ---------- */
+.page-header {
+  height: 670px;
+  width: 100%;
+  background: url(images/header.png) no-repeat center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 32px;
+}
+.header__title--border {
+  margin-top: 27px;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 1px;
+  border: none;
+  background: #00e0d0;
+}
+.header__text {
+  width: 780px;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.header__button {
+  padding: 12px 15px;
+  margin-top: 53px;
+  border: 1px solid #00e0d0;
+  border-radius: 2px;
+  background: none;
+  text-transform: uppercase;
+  color: #00e0d0;
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header__position {
+  position: relative;
+  bottom: -125px;
+  display: flex;
+
+}
+.position__item {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background: none;
+  border: 1px solid #9a97a3;
+  border-radius: 50%;
+}
+.position-item--current {
+  border-color: #00e0d0;
+  background: #00e0d0;
+}
+
+
+
+/* ========================================
+------------------ main -------------------
+======================================== */
+
+
+.page-content {
+  width: 100%;
+  background: white;
+}
+/* ----------  about section  ---------- */
+.about {
+  margin: 0 auto;
+}
+.about__info {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__info--image {
+  width: 235px;
+  height: 230px;
+  padding: 70px 100px 100px 0;
+}
+.about__info--content {
+  width: 540px;
+}
+.content__title {
+  margin: 0;
+  padding-bottom: 15px;
+  color: #413d4b;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+}
+.content__text {
+  margin: 0;
+  padding: 15px 0;
+  color: #817f86;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.content__button {
+  margin-top: 15px;
+  padding: 12px 15px;
+  border: 1px solid #00e0d0;
+  border-radius: 2px;
+  background: none;
+  text-transform: uppercase;
+  color: #00e0d0;
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about__video {
+  background: url(images/video.png) no-repeat center center;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.video__button {
+  background: none;
+  border: none;
+}
+.video__title {
+  padding-top: 30px;
+  margin: 0;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*  ----------  expertise section  ---------- */
+.expertise {
+  height: 750px;
+  text-align: center;
+}
+.expertise__title {
+  margin: 0;
+  padding-bottom: 15px;
+  color: #413d4b;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+}
+.expertise__text {
+  margin: 0;
+  padding: 15px 0;
+  color: #817f86;
+  font-weight: 300;
+  font-size: 14px;
+}
+.expertise__title--border {
+    width: 50px;
+
+}
+.expertise__details {
+  width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.details__items {
+  width: 315px;
+  height: 250px;
+  box-sizing: border-box;
+  border-color: #ebebeb;
+}
+.details__items--img {}
+.details__items--title {
+  color: #413d4b;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.details__items--info {
+  padding: 0 30px;
+  color: #7a7a7a;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* ----------  team section  ---------- */
+.team {
+  height: 712px;
+  background: url(images/team.png) no-repeat center center;
+}
+.team__title {}
+.team__text {}
+.team__details {}
+.member-details {}
+.member__foto {}
+.member__name {}
+.member__job {}
+.team__button-text {}
+.team__button {}
+
+/* ----------  works section  ---------- */
+.works {
+  height: 740px;
+}
+.works__title {}
+.works__link {}
+.works__projects {}
+.work__button {}
+
+/* ----------  testimonials section  ---------- */
+.testimonials {
+  height: 500px;
+  background: url(images/testimonials.png) no-repeat center center;
+}
+.testimonials__text {}
+.member__member-name {}
+.member__member-job {}
+.testimonials__members-gallery {}
+.members-gallery--back-btn {}
+.members-gallery--foto {}
+.member-foto {}
+.member-foto--current {}
+.members-gallery--forward-btn {}
+
+/* ----------  contact section  ---------- */
+.contact {
+  height: 650px;
+}
+
+.form {}
+.form__title {}
+.form__items {}
+.form--item {}
+.textarea {}
+.submit-btn {}
+
+.clients {}
+.clients__title {}
+.clients__logo {}
+
+/* ----------  footer  ---------- */
+.footer {
+  height: 400px;
+  background: url(images/footer.png) no-repeat center center;
+}
+.footer__info {}
+.info__logo {}
+.info__text {
+  font-weight: 300;
+}
+.info__ref {}
+.reference {}
+
+.footer__studio {}
+.studio__title {
+  font-weight: 900;
+}
+.studio__location {}
+.location__img {}
+.location__text {
+  font-weight: 300;
+}
+.studio__phone {}
+.phone__img {}
+.phone__text {
+  font-weight: 300;
+}
+
+.footer__social {}
+.social__title {
+  font-weight: 900;
+}
+.social__newsletter {}
+.newsletter__info {}
+.newsletter__button {}
+.newsletter__button--img {}
+.social__media-links {}
+.copyright {}

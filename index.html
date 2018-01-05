@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>tajam - PSD to HTML</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+
   </head>
   <body>
-    <header class="header--navigation">
-      <a class="header__logo" href="#">
-        <img src="images/logo" alt="tajam PSD to HTML">
+    <div class="check"></div>
+
+    <header class="navigation">
+      <a class="page-logo" href="#">
+        <img src="images/logo.png" alt="tajam PSD to HTML">
       </a>
-      <nav class="header__nav">
-        <ul class="nav__items">
+      <nav class="navigation__links">
+        <ul class="nav-list">
           <li class="nav--item nav-item--current">home</li>
           <li class="nav--item">about</li>
           <li class="nav--item">expertise</li>
@@ -22,11 +29,11 @@
         </ul>
       </nav>
     </header>
-    <header class="header--information">
-      <h1 class="header__title"></h1>
+    <header class="page-header">
+      <h1 class="header__title">We Are Awesome Creative Agency</h1>
       <hr class="header__title--border">
-      <p class="header__text"></p>
-      <button class="header__button" type="button" name="button"></button>
+      <p class="header__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh valputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+      <button class="header__button" type="button" name="button">learn more</button>
       <div class="header__position">
         <div class="position__item position-item--current"></div>
         <div class="position__item"></div>
@@ -34,78 +41,95 @@
         <div class="position__item"></div>
       </div>
     </header>
-    <main class="content">
+    <main class="page-content">
       <section class="about">
-        <div class="about__text">
-          <img src="images/about.jpg" alt="">
+        <div class="about__info">
+          <img class="about__info--image" src="images/about.png" alt="Tajam logo">
+          <div class="about__info--content">
+            <h2 class="content__title">our story</h2>
+            <p class="content__text">
+              This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+            <p class="content__text">
+              Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <button class="content__button" type="button" name="button">learn more</button>
+          </div>
         </div>
         <div class="about__video">
-
+          <button class="video__button" type="button" name="button">
+            <img src="images/video-btn.png" alt="start a video">
+          </button>
+          <p class="video__title">watch our story</p>
         </div>
       </section>
       <section class="expertise">
-        <h2 class="expertise__title"></h2>
-        <p class="expertise__text"></p>
+        <h2 class="expertise__title">expertise</h2>
+        <p class="expertise__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+        <hr class="expertise__title--border">
         <div class="expertise__details">
-          <div class="">
-            <img src="" alt="">
-            <h3 class=""></h3>
-            <p class=""></p>
+          <div class="details__items">
+            <img class="details__items--img" src="images/design.png" alt="web design & development">
+            <h3 class="details__items--title">web design & development</h3>
+            <p class="details__items--info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </div>
-          <div class="">
-            <img src="" alt="">
-            <h3 class=""></h3>
-            <p class=""></p>
+          <div class="details__items">
+            <img class="details__items--img" src="images/branding.png" alt="branding identity">
+            <h3 class="details__items--title">branding identity</h3>
+            <p class="details__items--info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </div>
-          <div class="">
-            <img src="" alt="">
-            <h3 class=""></h3>
-            <p class=""></p>
+          <div class="details__items">
+            <img class="details__items--img" src="images/mobile.png" alt="mobile app">
+            <h3 class="details__items--title">mobile app</h3>
+            <p class="details__items--info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </div>
-          <div class=""></div>
-          <div class="">
-            <img src="" alt="">
-            <h3 class=""></h3>
-            <p class=""></p>
+          <div class="details__items">
+            <img class="details__items--img" src="images/search.png" alt="search engine optimalization">
+            <h3 class="details__items--title">search engine optimalization</h3>
+            <p class="details__items--info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </div>
-          <div class="">
-            <img src="" alt="">
-            <h3 class=""></h3>
-            <p class=""></p>
+          <div class="details__items">
+            <img class="details__items--img" src="images/game.png" alt="game development">
+            <h3 class="details__items--title">game development</h3>
+            <p class="details__items--info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </div>
+          <div class="details__items">
+            <img class="details__items--img" src="images/love.png" alt="made with love">
+            <h3 class="details__items--title">made with love</h3>
+            <p class="details__items--info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+          </div>
+        </div>
         </div>
       </section>
       <section class="team">
-        <h2 class="team__title"></h2>
-        <p class="team__text"></p>
+        <h2 class="team__title">meet our amazing team</h2>
+        <p class="team__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
         <div class="team__details">
           <div class="member-details">
-            <img class="member__foto" src="" alt="">
-            <p class="member__name"></p>
-            <p class="member__job"></p>
+            <img class="member__foto" src="" alt="Semf Ucuk">
+            <p class="member__name">Semf Ucuk</p>
+            <p class="member__job">ceo & founder</p>
           </div>
           <div class="member-details">
-            <img class="member__foto" src="" alt="">
-            <p class="member__name"></p>
-            <p class="member__job"></p>
+            <img class="member__foto" src="" alt="Dik Adalin">
+            <p class="member__name">Dik Adalin</p>
+            <p class="member__job">engineering</p>
           </div>
           <div class="member-details">
-            <img class="member__foto" src="" alt="">
-            <p class="member__name"></p>
-            <p class="member__job"></p>
+            <img class="member__foto" src="" alt="Jeng Kol">
+            <p class="member__name">Jeng Kol</p>
+            <p class="member__job">designer</p>
           </div>
           <div class="member-details">
-            <img class="member__foto" src="" alt="">
-            <p class="member__name"></p>
-            <p class="member__job"></p>
+            <img class="member__foto" src="" alt="Pet Romak">
+            <p class="member__name">Pet Romak</p>
+            <p class="member__job">marketing</p>
           </div>
         </div>
-        <p class="team__button-text"></p>
-        <button class="team__button" type="button" name="button"></button>
+        <p class="team__button-text">Become part of our dream team, let’s join us !</p>
+        <button class="team__button" type="button" name="button">we are hiring</button>
       </section>
       <section class="works">
-        <h1 class="works__title"></h1>
-        <a class="works__link" href="#"></a>
+        <h1 class="works__title">our works</h1>
+        <a class="works__link" href="#">See All Project in dribbble ></a>
         <div class="works__projects">
           <div></div> <!-- anchor -->
           <div></div>
@@ -120,58 +144,58 @@
           <div></div>
           <div></div>
         </div>
-        <button class="work__button" type="button" name="button"></button>
+        <button class="work__button" type="button" name="button">load more</button>
       </section>
       <section class="testimonials">
-        <p class="testimonials__text"></p>
-        <p class="member__name"></p>
-        <p class="member__job"></p>
-        <div class="testimonials__members">
-          <button class="members__back-btn" type="button" name="button"></button>
-          <div class="members__foto"> <!-- flex-order -->
-            <div class="member">
+        <p class="testimonials__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+        <p class="testimonials__member-name">Jane Galadriel</p>
+        <p class="testimonials__member-job">ceo tengkurep</p>
+        <div class="testimonials__members-gallery">
+          <button class="members-gallery--back-btn" type="button" name="button"><</button>
+          <div class="members-gallery--foto"> <!-- flex-order -->
+            <div class="member-foto">
               <img src="" alt="">
             </div>
-            <div class="member">
+            <div class="member-foto">
               <img src="" alt="">
             </div>
-            <div class="member ">
+            <div class="member-foto member-foto--current">
               <img src="" alt="">
             </div>
-            <div class="member">
+            <div class="member-foto">
               <img src="" alt="">
             </div>
-            <div class="member">
+            <div class="member-foto">
               <img src="" alt="">
             </div>
           </div>
-          <button class="members__forward-btn" type="button" name="button"></button>
+          <button class="members-gallery__forward-btn" type="button" name="button">></button>
         </div>
       </section>
       <section class="contact">
         <div class="form">
-          <h2 class="form__title"></h2>
+          <h2 class="form__title">give us a good news</h2>
           <form class="form__items" action="index.html" method="post">
             <input class="form--item" type="text" name="name">
             <input class="form--item" type="email" name="email">
             <input class="form--item" type="text" name="subject">
             <textarea class="form--item textarea" name="message" rows="8" cols="80"></textarea>
-            <button class="submit-btn" type="button" name="button"></button>
+            <button class="submit-btn" type="button" name="button">submit</button>
           </form>
         </div>
         <div class="clients">
-          <h2 class="clients__title"></h2>
+          <h2 class="clients__title">our happy client</h2>
           <div class="clients__logo">
-            <img src="" alt="ZARA">
-            <img src="" alt="MANGO">
-            <img src="" alt="BARNEYS NEWYORK">
-            <img src="" alt="GUCCI">
-            <img src="" alt="Calvin Klein">
-            <img src="" alt="NIKE">
-            <img src="" alt="CONVERSE">
-            <img src="" alt="PUMA">
-            <img src="" alt="LEVI'S">
-            <img src="" alt="BILLABONG.">
+            <img src="images/zara.png" alt="ZARA">
+            <img src="images/mango.png" alt="MANGO">
+            <img src="images/barneys.png" alt="BARNEYS NEWYORK">
+            <img src="images/gucci.png" alt="GUCCI">
+            <img src="images/calvin.png" alt="Calvin Klein">
+            <img src="images/nike.png" alt="NIKE">
+            <img src="images/converse.png" alt="CONVERSE">
+            <img src="images/puma.png" alt="PUMA">
+            <img src="images/levis.png" alt="LEVI'S">
+            <img src="images/billabong.png" alt="BILLABONG.">
           </div>
         </div>
       </section>
@@ -179,9 +203,9 @@
     <footer class="footer">
       <div class="footer__info">
         <a class="info__logo" href="#">
-          <img src="" alt="tajam PSD to HTML">
+          <img src="images/logo.png" alt="tajam PSD to HTML">
         </a>
-        <p class="info__text"></p>
+        <p class="info__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
         <p class="info__ref">
           <span class="reference">help</span>
           <span class="reference">terms & condition</span>
@@ -191,20 +215,20 @@
       <div class="footer__studio">
         <h2 class="studio__title">Our studio</h2>
         <div class="studio__location">
-          <img class="location__img" src="" alt="location">
+          <img class="location__img" src="images/address.png" alt="location">
           <p class="location__text">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p>
         </div>
         <div class="studio__phone">
-          <img class="phone__img" src="images/phone.jpg" alt="phone">
+          <img class="phone__img" src="images/phone.png" alt="phone">
           <p class="phone__text">(+62) 21-2224 3333</p>
         </div>
       </div>
       <div class="footer__social">
-        <h2 class="social__title"></h2>
+        <h2 class="social__title">stay in touch</h2>
         <div class="social__newsletter">
-          <p class="newsletter__info"></p>
+          <p class="newsletter__info">Subscribe our newsletter</p>
           <button class="newsletter__button" type="button" name="button">
-            <img class="newsletter__button--img" src="" alt="subscribe our newsletter">
+            <img class="newsletter__button--img" src="images/button.png" alt="subscribe our newsletter">
           </button>
         </div>
         <div class="social__media-links">
@@ -214,7 +238,7 @@
           <img src="images/instagram" alt="Instagram">
           <img src="images/google" alt="Google+">
           <img src="images/youtube" alt="YouTube">
-          <p class="copyright"></p>
+          <p class="copyright">Copyright &copy 2015 - Tajem Creative</p>
         </div>
       </div>
     </footer>
