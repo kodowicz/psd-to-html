@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -113,28 +114,28 @@
         <div class="team__details">
           <figure class="member-details">
             <img class="member-details__foto" src="images/semf ucuk.jpg" alt="Semf Ucuk">
-            <figcaption>
+            <figcaption class="member-details-caption">
               <p class="member-details__name">Semf Ucuk</p>
               <p class="member-details__job">ceo & founder</p>
             </figcaption>
           </figure>
           <figure class="member-details">
             <img class="member-details__foto" src="images/dik adalin.jpg" alt="Dik Adalin">
-            <figcaption>
+            <figcaption class="member-details-caption">
               <p class="member-details__name">Dik Adalin</p>
               <p class="member-details__job">engineering</p>
             </figcaption>
           </figure>
           <figure class="member-details">
             <img class="member-details__foto" src="images/jeng kol.jpg" alt="Jeng Kol">
-            <figcaption>
+            <figcaption class="member-details-caption">
               <p class="member-details__name">Jeng Kol</p>
               <p class="member-details__job">designer</p>
             </figcaption>
           </figure>
           <figure class="member-details">
             <img class="member-details__foto" src="images/pet romak.jpg" alt="Pet Romak">
-            <figcaption>
+            <figcaption class="member-details-caption">
               <p class="member-details__name">Pet Romak</p>
               <p class="member-details__job">marketing</p>
             </figcaption>
@@ -145,10 +146,11 @@
       </section>
       <section class="works">
         <h1 class="works__title">our works</h1>
-        <a class="works__link" href="#">See All Project in dribbble ></a>
+        <a class="works__link" href="#">See All Project in dribbble <i class="fa fa-angle-right" aria-hidden="true"></i></a>
         <div class="works__projects">
+
           <div></div> <!-- anchor -->
-          <div></div>
+            <div></div>
           <div></div>
           <div></div>
           <div></div>
@@ -167,35 +169,39 @@
         <p class="testimonials__member-name">Jane Galadriel</p>
         <p class="testimonials__member-job">ceo tengkurep</p>
         <div class="testimonials__members-gallery">
-          <button class="members-gallery--back-btn" type="button" name="button"><</button>
+          <button class="members-gallery--back-btn" type="button" name="button">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </button>
           <div class="members-gallery--foto"> <!-- flex-order -->
-            <div class="member-foto">
-              <img src="" alt="">
-            </div>
-            <div class="member-foto">
-              <img src="" alt="">
-            </div>
-            <div class="member-foto member-foto--current">
-              <img src="" alt="">
-            </div>
-            <div class="member-foto">
-              <img src="" alt="">
-            </div>
-            <div class="member-foto">
-              <img src="" alt="">
-            </div>
+            <figure class="member-foto">
+              <img class="member-foto--image" src="images/semf ucuk.jpg" alt="Semf Ucuk">
+            </figure>
+            <figure class="member-foto">
+              <img class="member-foto--image" src="images/Dik Adalin.jpg" alt="Dik Adalin">
+            </figure>
+            <figure class="member-foto">
+              <img class="member-foto--image member-foto--current-image" src="images/Jeng Kol.jpg" alt="Jeng Kol">
+            </figure>
+            <figure class="member-foto">
+              <img class="member-foto--image" src="images/Pet Romak.jpg" alt="Pet Romak">
+            </figure>
+            <figure class="member-foto">
+              <img class="member-foto--image" src="images/Dina Andur.jpg" alt="Dina Andur">
+            </figure>
           </div>
-          <button class="members-gallery__forward-btn" type="button" name="button">></button>
+          <button class="members-gallery--forward-btn" type="button" name="button">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
         </div>
       </section>
       <section class="contact">
         <div class="form">
           <h2 class="form__title">give us a good news</h2>
           <form class="form__items" action="index.html" method="post">
-            <input class="form--item" type="text" name="name">
-            <input class="form--item" type="email" name="email">
-            <input class="form--item" type="text" name="subject">
-            <textarea class="form--item textarea" name="message" rows="8" cols="80"></textarea>
+            <input class="form--item" type="text" name="name" placeholder="Name">
+            <input class="form--item" type="email" name="email" placeholder="Email">
+            <input class="form--item" type="text" name="subject" placeholder="Subject">
+            <textarea class="form--item textarea" name="message" placeholder="Message" cols="12"></textarea>
             <button class="submit-btn" type="button" name="button">submit</button>
           </form>
         </div>
@@ -248,12 +254,12 @@
           </button>
         </div>
         <div class="social__media-links">
-          <img src="images/facebook" alt="Facebook">
-          <img src="images/twitter" alt="Twitter">
-          <img src="images/dribbble" alt="Dribbble">
-          <img src="images/instagram" alt="Instagram">
-          <img src="images/google" alt="Google+">
-          <img src="images/youtube" alt="YouTube">
+          <img src="images/facebook.png" alt="Facebook">
+          <img src="images/twitter.png" alt="Twitter">
+          <img src="images/dribbble.png" alt="Dribbble">
+          <img src="images/instagram.png" alt="Instagram">
+          <img src="images/google.png" alt="Google+">
+          <img src="images/youtube.png" alt="YouTube">
           <p class="copyright">Copyright &copy 2015 - Tajem Creative</p>
         </div>
       </div>
