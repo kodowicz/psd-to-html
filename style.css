@@ -12,13 +12,6 @@ body {
   color: white
 }
 
-.check {
-  position: absolute;
-  top: 1750px;
-  height: 50px;
-  width: 100%;
-  background: rgba(0,224,208,.4);
-}
 /* ============================
 ---------- header -------------
 ============================ */
@@ -29,9 +22,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 .page-logo {
   width: 130px;
@@ -70,15 +64,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.header__title {
+.slider-item {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  left: 50%;
+  transform: translateX(  -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+/* slider animation */
+.slider-item--enabled {
+  opacity: 1;
+  z-index: 2
+}
+
+.slider-item__title {
   margin: 0;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 32px;
 }
-.header__title::after {
+
+.slider-item__title::after {
   content: '';
   display: block;
   margin: 27px auto 30px auto;
@@ -86,17 +98,19 @@ body {
   height: 1px;
   background: #00e0d0;
 }
-.header__text {
-  width: 780px;
-  margin: 0;
+
+.slider-item__text {
+  width: 800px;
+  margin: 0 auto;
   text-align: center;
   font-weight: 300;
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-.header__button {
-  padding: 12px 15px;
+
+.slider-item__button {
+  padding: 10px 15px;
   margin-top: 53px;
   border: 1px solid #00e0d0;
   border-radius: 2px;
@@ -105,21 +119,22 @@ body {
   color: #00e0d0;
   font-family: 'Hammersmith One', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
-.header__position {
-  position: relative;
-  bottom: -125px;
-  display: flex;
 
+.page-header__slide-position {
+  position: absolute;
+  top: 580px;
+  display: flex;
 }
-.position__item {
+.position-item {
   width: 10px;
   height: 10px;
   margin-right: 5px;
   background: none;
   border: 1px solid #9a97a3;
   border-radius: 50%;
+  transition: all 0.4s linear;
 }
 .position-item--current {
   border-color: #00e0d0;
@@ -173,7 +188,7 @@ body {
 
 .content__button {
   margin-top: 15px;
-  padding: 12px 15px;
+  padding: 10px 15px;
   border: 1px solid #00e0d0;
   border-radius: 2px;
   background: none;
@@ -181,7 +196,7 @@ body {
   color: #00e0d0;
   font-family: 'Hammersmith One', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .about__video {
@@ -339,7 +354,7 @@ body {
 }
 .team__button {
   margin-top: 15px;
-  padding: 12px 15px;
+  padding: 10px 15px;
   border: 1px solid #00e0d0;
   border-radius: 2px;
   background: none;
@@ -347,7 +362,7 @@ body {
   color: #00e0d0;
   font-family: 'Hammersmith One', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* ----------  works section  ---------- */
@@ -389,7 +404,7 @@ body {
   background: rgb(200,200,200)
 }
 .work__button {
-  padding: 12px 25px;
+  padding: 10px 25px;
   border: 1px solid #00e0d0;
   border-radius: 2px;
   background: none;
@@ -397,7 +412,7 @@ body {
   color: #00e0d0;
   font-family: 'Hammersmith One', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   height: 45px;
 }
 
