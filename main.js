@@ -21,17 +21,17 @@ const videoButton = document.querySelector('.video-button__button');
 const video = document.querySelector('.promoting-video');
 const videoButtonContainer = document.querySelector('.video-button');
 
-videoButton.addEventListener('click', () => {
+videoButton.addEventListener('click', function () {
   video.classList.add('promoting-video--video-played');
   videoButtonContainer.classList.add('video-button--video-played');
   video.play();
 })
 
-video.addEventListener('click', () => {
+video.addEventListener('click', function () {
   video.pause();
   videoButtonContainer.classList.remove('video-button--video-played');
 })
 // if video ends playing
-video.addEventListener('ended', () => {
+video.addEventListener('ended', function () {
   videoButtonContainer.style.display = '';
 })
