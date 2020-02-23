@@ -20,12 +20,12 @@
       <nav class="navigation__links">
         <ul class="nav-list">
           <li class="nav-list__item"><a class="nav-list__item--anchor nav-list__item--current" href="#">home</a></li>
-          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#">about</a></li>
-          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#">expertise</a></li>
-          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#">teams</a></li>
-          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#">works</a></li>
-          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#">people say</a></li>
-          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#">contact</a></li>
+          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#about">about</a></li>
+          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#expertise">expertise</a></li>
+          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#team">teams</a></li>
+          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#works">works</a></li>
+          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#testimonials">people say</a></li>
+          <li class="nav-list__item"><a class="nav-list__item--anchor" href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -64,7 +64,7 @@
 
     <main class="page-content">
 
-      <section class="about">
+      <section id="about" class="about">
         <div class="about__info">
           <img class="about-info-image" src="images/about.png" alt="Tajam logo">
           <div class="about-info-content">
@@ -90,7 +90,7 @@
         </div>
       </section>
 
-      <section class="expertise">
+      <section id="expertise" class="expertise">
         <h2 class="expertise__title">expertise</h2>
         <p class="expertise__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
         <div class="expertise__details">
@@ -139,33 +139,33 @@
         </div>
       </section>
 
-      <section class="team">
+      <section id="team" class="team">
         <h2 class="team__title">meet our amazing team</h2>
         <p class="team__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
         <div class="team__details">
           <figure class="member-details">
-            <img class="member-details__foto" src="images/semf ucuk.jpg" alt="Semf Ucuk">
+            <img class="member-details__foto" src="images/Semf Ucuk.jpg" alt="Semf Ucuk">
             <figcaption class="member-details-caption">
               <p class="member-details__name">Semf Ucuk</p>
               <p class="member-details__job">ceo & founder</p>
             </figcaption>
           </figure>
           <figure class="member-details">
-            <img class="member-details__foto" src="images/dik adalin.jpg" alt="Dik Adalin">
+            <img class="member-details__foto" src="images/Dik Adalin.jpg" alt="Dik Adalin">
             <figcaption class="member-details-caption">
               <p class="member-details__name">Dik Adalin</p>
               <p class="member-details__job">engineering</p>
             </figcaption>
           </figure>
           <figure class="member-details">
-            <img class="member-details__foto" src="images/jeng kol.jpg" alt="Jeng Kol">
+            <img class="member-details__foto" src="images/Jeng Kol.jpg" alt="Jeng Kol">
             <figcaption class="member-details-caption">
               <p class="member-details__name">Jeng Kol</p>
               <p class="member-details__job">designer</p>
             </figcaption>
           </figure>
           <figure class="member-details">
-            <img class="member-details__foto" src="images/pet romak.jpg" alt="Pet Romak">
+            <img class="member-details__foto" src="images/Pet Romak.jpg" alt="Pet Romak">
             <figcaption class="member-details-caption">
               <p class="member-details__name">Pet Romak</p>
               <p class="member-details__job">marketing</p>
@@ -176,28 +176,74 @@
         <button class="team__button" type="button" name="button">we are hiring</button>
       </section>
 
-      <section class="works">
+      <section id="works" class="works">
         <h1 class="works__title">our works</h1>
-        <a class="works__link" href="#">See All Project in dribbble <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a class="works__link" href="https://dribbble.com/">See All Project in dribbble <i class="fa fa-angle-right" aria-hidden="true"></i></a>
         <div class="works__projects">
 
-          <div></div> <!-- anchor -->
-            <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/448511/screenshots/10349459/media/7947a21ec03a4507c3763841526bbaf3.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/448511/screenshots/9481169/media/542bb2b9c5c12efbabe33b049b4bbe12.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/116499/screenshots/10292589/media/cc17cfc46c89a2e558fc970086305630.png" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/1584156/screenshots/10283063/media/e675d55a9ce5809e89fba0bc32a05293.png" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/1785951/screenshots/10347657/image.png" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/870476/screenshots/10287954/media/ed902ba32cc48fca05bda3cf45f6fded.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/992274/screenshots/10378021/media/d3386117dd0c8abe9e5398f3559921f7.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/4864185/screenshots/10376849/media/5cc5101792f50e90f04016011e5d692a.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/143620/screenshots/10344984/media/9c2e482cfdac4efd77fff47b4013ce33.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/3512454/screenshots/10350336/media/9db3771d89954591b006fef6b7029d52.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/2511168/screenshots/10309207/media/85d5c5ac7f5b432e9382ff3b169c9366.jpg" alt=" " />
+          </div>
+          <div class="works__project">
+            <img class="works__image" src="https://cdn.dribbble.com/users/340292/screenshots/10279008/media/df4fa89e0cc4d116ebaa740e7606ec4c.jpg" alt=" " />
+          </div>
+
+
+          <div class="works__project works__project--hidden">
+            <img class="works__image" src="https://cdn.dribbble.com/users/4893307/screenshots/10346146/media/da9a0a4f56e5a7d72f1f5b380735be83.png" alr=" "  />
+          </div>
+          <div class="works__project works__project--hidden">
+            <img class="works__image" src="https://cdn.dribbble.com/users/4766539/screenshots/10288746/media/cb747d9f5b5e586310817a8a7fafa73a.png" alr=" "  />
+          </div>
+          <div class="works__project works__project--hidden">
+            <img class="works__image" src="https://cdn.dribbble.com/users/12657/screenshots/10299748/media/79ebdb4c7e4ac4bfc209fbc99edfd863.jpg" alr=" "  />
+          </div>
+          <div class="works__project works__project--hidden">
+            <img class="works__image" src="https://cdn.dribbble.com/users/1151124/screenshots/10351543/media/7da6b6c16eda28979c84826220dca9c7.jpg" alr=" "  />
+          </div>
+          <div class="works__project works__project--hidden">
+            <img class="works__image" src="https://cdn.dribbble.com/users/439666/screenshots/10360273/media/878df685f33d229dc5dc918b560fae2b.jpg" alr=" "  />
+          </div>
+          <div class="works__project works__project--hidden">
+            <img class="works__image" src="https://cdn.dribbble.com/users/2497713/screenshots/10331226/image.png" alr=" "  />
+          </div>
+
+
         </div>
-        <button class="work__button" type="button" name="button">load more</button>
+        <button class="works__button" type="button" name="button">load more</button>
       </section>
 
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <p class="testimonials__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
         <p class="testimonials__member-name">Jane Galadriel</p>
         <p class="testimonials__member-job">ceo tengkurep</p>
@@ -228,7 +274,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="form">
           <h2 class="form__title">give us a good news</h2>
           <form class="form__items" action="index.html" method="post">
